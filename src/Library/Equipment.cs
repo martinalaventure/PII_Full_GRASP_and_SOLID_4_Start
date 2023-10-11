@@ -17,5 +17,9 @@ namespace Full_GRASP_And_SOLID
         public string Description { get; set; }
 
         public double HourlyCost { get; set; }
+        public Equipment CreateEquipment(string description, double hourlyCost)
+        {
+            return new Equipment(description, hourlyCost);
+        }
     }
 }

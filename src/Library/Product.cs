@@ -17,5 +17,9 @@ namespace Full_GRASP_And_SOLID
         public string Description { get; set; }
 
         public double UnitCost { get; set; }
+        public Product CreateProduct(string description, double unitCost)
+        {
+            return new Product(description, unitCost);
+        }
     }
 }
